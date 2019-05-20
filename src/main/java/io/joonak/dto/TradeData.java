@@ -1,20 +1,20 @@
-package io.joonak;
+package io.joonak.dto;
 
 import java.io.Serializable;
 
 public class TradeData implements Serializable {
 
-    private Integer trade_price;
+    private Double trade_price;
     private Double trade_volume;
     private Integer trade_amount;
     private Double change_rate;
     private String code;
 
-    public Integer getTrade_price() {
+    public Double getTrade_price() {
         return trade_price;
     }
 
-    public void setTrade_price(Integer trade_price) {
+    public void setTrade_price(Double trade_price) {
         this.trade_price = trade_price;
     }
 
@@ -52,8 +52,7 @@ public class TradeData implements Serializable {
 
     @Override
     public String toString() {
-        return "TradeData{" +
-                "trade_price=" + trade_price +
+        return "{trade_price=" + trade_price +
                 ", trade_volume=" + trade_volume +
                 ", trade_amount=" + trade_amount +
                 ", change_rate=" + change_rate +
